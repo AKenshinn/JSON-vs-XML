@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="page-header">
-            <h1>JSON vs XML <small style="font-size:15px;">JavaScript Object Notation vs Extensible Markup Language</small></h1>
+            <h1>JSON vs XML <small class="hidden-xs hidden-sm" style="font-size:15px;">JavaScript Object Notation vs Extensible Markup Language</small></h1>
           </div>
         </div>
       </div>
@@ -47,7 +47,8 @@
   { "firstName":"Anna", "lastName":"Smith" },
   { "firstName":"Peter", "lastName":"Jones" }
 ]}</xmp></pre>
-             <a class="btn btn-primary" href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">More tutorial about JSON</a> 
+              <a class="btn btn-primary" href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">More tutorial about JSON</a> 
+              <hr class="visible-xs visible-sm" />
             </div>
             <div class="col-md-6">
                 <p><h3>XML Example</h3></p>
@@ -67,6 +68,7 @@
 </employees>
 </xmp></pre>
               <a class="btn btn-primary" href="https://www.w3schools.com/xml/" target="_blank">More tutorial about XML</a>
+              <div class="visible-xs visible-sm" style="height:20px;"></div>
             </div>
           </div>
         </div>
@@ -115,7 +117,7 @@
                   </tr>
                 </tbody>
               </table>
-              <hr />
+              <hr class="visible-xs visible-sm" />
             </div>
             <div class="col-md-6">
               <h3>Draw</h3>
@@ -125,8 +127,10 @@
                 <li>Can be parsed and used by lots of programming languages</li>
                 <li>Can be fetched with an XMLHttpRequest</li>
               </ul>
+              <hr class="visible-xs visible-sm" />
             </div>
           </div>
+          <hr class="hidden-xs hidden-sm" style="margin-top:0px;margin-bottom:10px;" />
           <div class="row">
             <div class="col-md-12">
               <div class="panel panel-warning">
@@ -148,6 +152,7 @@
               </div>
               <h3>JSON</h3>
               <p><span style="margin-left:15px;"></span>JSON is very useful when developing a web application where fast, compact and convenient serialization of data is required, however its flexible nature is the very thing that makes it less suitable than XML.</p>
+              <hr class="visible-xs visible-sm" />
             </div>
             <div class="col-md-6">
               <div class="text-center">
@@ -155,13 +160,35 @@
               </div>
               <h3>XML</h3>
               <p><span style="margin-left:15px;"></span>XML using for transferring data between separate systems, or storing data that will be read by 3rd parties.</p>
+              <div class="visible-xs visible-sm" style="height:20px;"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <p class="text-center" style="margin:0px;color:#CCCCCC;">BIS#30 Group5</p>
+    </footer>
   </body>
   <style type="text/css">
+    h3 {
+      margin-top: 0px;
+    }
+
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+      margin-bottom: 40px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+    }
+
     xmp {
       margin: 0px;
     }
