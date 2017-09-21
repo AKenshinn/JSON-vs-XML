@@ -32,6 +32,12 @@ xmp {
   margin: 0px;
 }
 
+pre#pre-xml {
+  height: 250px;
+  overflow: auto; 
+  overflow-y: scroll;
+}
+
 .btn:focus {
   outline: none;
 }

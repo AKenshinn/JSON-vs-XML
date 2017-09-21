@@ -37,49 +37,44 @@
         <div class="tab-pane fade active in" id="structure">
           <div class="row" style="margin-top:20px;">
             <div class="col-md-12">
-              <p>The following JSON and XML examples both defines an employees object, with an array of 3 employees :</p>
+              <p>The following JSON and XML examples both defines an employees object, with an array of 5 students:</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
               <p><h3>JSON Example</h3></p>
-          <pre><xmp>{"students":[
-  { "id":60130700606", "firstName":"Nithiporn", "lastName":"Phumsakul" },
-  { "id":60130700613", "firstName":"Varinthon", "lastName":"Tuchinda" },
-  { "id":60130700622", "firstName":"Kannika", "lastName":"Thiangyoo" },
-  { "id":60130700646", "firstName":"Chalisa", "lastName":"Patanadamrongchai" },
-  { "id":60130700657", "firstName":"Anat", "lastName":"Abdullagasim" }
+          <pre id="pre-json"><xmp>{"students":[
+  { "id":60130700606", "firstName":"Nithiporn"},
+  { "id":60130700613", "firstName":"Varinthon"},
+  { "id":60130700622", "firstName":"Kannika"},
+  { "id":60130700646", "firstName":"Chalisa"},
+  { "id":60130700657", "firstName":"Anat"}
 ]}</xmp></pre>
               <a class="btn btn-primary" href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">More tutorial about JSON</a> 
               <hr class="visible-xs visible-sm" />
             </div>
             <div class="col-md-6">
                 <p><h3>XML Example</h3></p>
-          <pre><xmp><students>
+          <pre id="pre-xml"><xmp><students>
   <student>
     <id>60130700606</id>
     <firstName>Nithiporn</firstName>
-    <lastName>Phumsakul</lastName>
   </student>
   <student>
     <id>60130700613</id>
     <firstName>Varinthon</firstName>
-    <lastName>Tuchinda</lastName>
   </student>
   <student>
     <id>60130700622</id>
     <firstName>Kannika</firstName>
-    <lastName>Thiangyoo</lastName>
   </student>
   <student>
     <id>60130700646</id>
     <firstName>Chalisa</firstName>
-    <lastName>Patanadamrongchai</lastName>
   </student>
   <student>
     <id>60130700657</id>
     <firstName>Anat</firstName>
-    <lastName>Abdullagasim</lastName>
   </student>
 </students>
 </xmp></pre>
@@ -169,7 +164,7 @@
               <h3>JSON</h3>
               <p><span style="margin-left:15px;"></span>JSON is very useful when developing a web application where fast, compact and convenient serialization of data is required, however its flexible nature is the very thing that makes it less suitable than XML.</p>
               <p><span style="margin-left:15px;"></span>An example of where this is used is web services responses. In the 'old' days, web services used XML as their primary data format for transmitting back data, but since JSON appeared, it has been the preferred format because it is much more lightweight.</p>
-              <p><span style="margin-left:15px;"><b>JSON is built on two structures :</b></p>
+              <p><b>JSON is built on two structures:</b></p>
               <ul>
                 <li>A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.</li>
                 <li>An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.</li>
@@ -182,7 +177,7 @@
               </div>
               <h3>XML</h3>
               <p><span style="margin-left:15px;"></span>XML using for transferring data between separate systems, or storing data that will be read by 3rd parties.</p>
-              <p><span style="margin-left:15px;"></span>JSON seems superior in every way - it's flexible, more compact and in many cases easier to use, however it lacks some key features, in particular :</p>
+              <p><span style="margin-left:15px;"></span>JSON seems superior in every way - it's flexible, more compact and in many cases easier to use, however it lacks some key features, in particular:</p>
               <p><b>Schema support, </b><br>
               <span style="margin-left:15px;"></span>The ability for party A to specify the format of a document, and the ability for party B to check that they are supplying something that matches this format.</p>
               <p><b>Namespace support, </b><br>
