@@ -36,7 +36,7 @@
         <div class="tab-pane fade active in" id="structure">
           <div class="row" style="margin-top:20px;">
             <div class="col-md-12">
-              <p>The following JSON and XML examples both defines an employees object, with an array of 3 employees:</p>
+              <p>The following JSON and XML examples both defines an employees object, with an array of 3 employees :</p>
             </div>
           </div>
           <div class="row">
@@ -92,28 +92,28 @@
                     <td>Message size</td>
                     <td>Smaller</td>
                     <td>Bigger</td>
-                    <td><button class="btn btn-info"><i class="fa fa-info"></i></button></td>
+                    <td><button id="info1" class="btn btn-info"><i class="fa fa-info"></i></button></td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>Structural</td>
                     <td>Dynamic</td>
                     <td>Strict</td>
-                    <td><button class="btn btn-info"><i class="fa fa-info"></i></button></td>
+                    <td><button id="info2" class="btn btn-info"><i class="fa fa-info"></i></button></td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>Consumed by JavaScript</td>
                     <td>Easier</td>
                     <td>Harder</td>
-                    <td><button class="btn btn-info"><i class="fa fa-info"></i></button></td>
+                    <td><button id="info3" class="btn btn-info"><i class="fa fa-info"></i></button></td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>Parsing</td>
                     <td>JavaScript function</td>
                     <td>XML parser</td>
-                    <td><button class="btn btn-info"><i class="fa fa-info"></i></button></td>
+                    <td><button id="info4" class="btn btn-info"><i class="fa fa-info"></i></button></td>
                   </tr>
                 </tbody>
               </table>
@@ -122,8 +122,8 @@
             <div class="col-md-6">
               <h3>Draw</h3>
               <ul>
-                <li>Self describing (human readable)</li>
-                <li>Hierarchical (values within values)</li>
+                <li>Self describing (Human readable)</li>
+                <li>Hierarchical (Values within values)</li>
                 <li>Can be parsed and used by lots of programming languages</li>
                 <li>Can be fetched with an XMLHttpRequest</li>
               </ul>
@@ -169,6 +169,24 @@
     <footer class="footer">
       <p class="text-center" style="margin:0px;color:#CCCCCC;">BIS#30 Group5</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModal-title"></h4>
+          </div>
+          <div class="modal-body" id="myModal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/home.js"></script>
   </body>
   <style type="text/css">
     h3 {
