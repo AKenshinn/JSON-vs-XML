@@ -29,7 +29,7 @@
           <ul class="nav nav-tabs">
             <li class="active"><a href="#structure" data-toggle="tab">Structure</a></li>
             <li><a href="#compare" data-toggle="tab">Comparative</a></li>
-            <li><a href="#appropiate" data-toggle="tab">Appropiate</a></li>
+            <li><a href="#using" data-toggle="tab">Using</a></li>
           </ul>
         </div>
       </div>
@@ -145,22 +145,34 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="appropiate">
+        <div class="tab-pane" id="using">
           <div class="row" style="margin-top:40px;">
             <div class="col-md-6">
               <div class="text-center">
-                <img src="./images/json.png" class="" alt="JSON" width="150" height="150" />
+                <img src="./images/json.png" class="" alt="JSON" width="90" height="90" />
               </div>
               <h3>JSON</h3>
               <p><span style="margin-left:15px;"></span>JSON is very useful when developing a web application where fast, compact and convenient serialization of data is required, however its flexible nature is the very thing that makes it less suitable than XML.</p>
+              <p><span style="margin-left:15px;"></span>An example of where this is used is web services responses. In the 'old' days, web services used XML as their primary data format for transmitting back data, but since JSON appeared, it has been the preferred format because it is much more lightweight.</p>
+              <p><span style="margin-left:15px;"><b>JSON is built on two structures :</b></p>
+              <ul>
+                <li>A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.</li>
+                <li>An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.</li>
+              </ul>
               <hr class="visible-xs visible-sm" />
             </div>
             <div class="col-md-6">
               <div class="text-center">
-                <img src="./images/xml.svg.png" class="" alt="xml" width="150" height="150" />
+                <img src="./images/xml.svg.png" class="" alt="xml" width="90" height="90" />
               </div>
               <h3>XML</h3>
               <p><span style="margin-left:15px;"></span>XML using for transferring data between separate systems, or storing data that will be read by 3rd parties.</p>
+              <p><span style="margin-left:15px;"></span>JSON seems superior in every way - it's flexible, more compact and in many cases easier to use, however it lacks some key features, in particular :</p>
+              <p><b>Schema support, </b><br>
+              <span style="margin-left:15px;"></span>The ability for party A to specify the format of a document, and the ability for party B to check that they are supplying something that matches this format.</p>
+              <p><b>Namespace support, </b><br>
+              <span style="margin-left:15px;"></span>The ability to mix data intended to be read by multiple sources in the same document.</p>
+              <p><span style="margin-left:15px;"></span>An example of this in action is the SOAP protocol - namespaces allow for the separation of the SOAP "Envelope", or "Wrapper" data which is passed alongside the serialized application data. This allows web frameworks process and handle the SOAP Envelope and then pass the body / payload data onto the application.</p>
               <div class="visible-xs visible-sm" style="height:20px;"></div>
             </div>
           </div>
@@ -168,7 +180,7 @@
       </div>
     </div>
     <footer class="footer">
-      <p class="text-center" style="margin:0px;color:#BDBDBD;">BIS#30 Group5</p>
+      <p class="text-center" style="margin:0px;color:#6E6E6E;">BIS#30 Group5</p>
     </footer>
 
     <!-- Modal -->
