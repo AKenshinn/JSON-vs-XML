@@ -36,6 +36,7 @@ pre#pre-xml {
   height: 250px;
   overflow: auto; 
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .btn:focus {
@@ -52,4 +53,18 @@ pre#pre-xml {
 
 #table-compare > tbody > tr > td:not(:nth-child(2)) {
   text-align: center;
+}
+
+@media (max-width:425px)  {
+  pre#pre-xml {
+    height: auto;
+    overflow: hidden; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  pre#pre-json {
+    overflow: auto; 
+    overflow-x: scroll;
+  }
 }
