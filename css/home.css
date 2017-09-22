@@ -55,7 +55,7 @@ pre#pre-xml {
   text-align: center;
 }
 
-@media (max-width:425px)  {
+@media (max-width:480px)  {
   pre#pre-xml {
     height: auto;
     overflow: hidden; 
