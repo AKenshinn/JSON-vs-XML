@@ -32,6 +32,10 @@ xmp {
   margin: 0px;
 }
 
+pre {
+  white-space: nowrap;
+}
+
 pre#pre-xml {
   height: 250px;
   overflow: auto; 
