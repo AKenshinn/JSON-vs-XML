@@ -60,7 +60,7 @@ pre#pre-xml {
     height: auto;
     overflow: hidden; 
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: scroll;
   }
 
   pre#pre-json {
